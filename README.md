@@ -109,14 +109,59 @@ Used Google BigQuery to validate data integrity and check:
 
 ### Step 3 — Exploratory Data Analysis (EDA)
 
-The exploratory analysis covered:
+### Exploratory Data Analysis (EDA)
 
-- CSAT and NPS distributions.
-- Response time distribution and potential outliers.
-- Customer service channel performance.
-- Banking service performance.
-- Monthly CSAT and NPS trends.
-- Correlation analysis between customer experience metrics.
+The exploratory analysis was conducted to understand customer experience patterns, identify performance differences across service channels and banking services, and explore relationships between operational and customer satisfaction metrics.
+
+The analysis covered the following areas:
+
+**1. CSAT and NPS Distribution Analysis**
+- Examined the distribution of Customer Satisfaction (CSAT) scores on a scale of 1–5 to understand overall customer satisfaction levels.
+- Calculated the percentage of satisfied customers (CSAT scores of 4–5) and compared it with neutral and dissatisfied responses.
+- Classified Net Promoter Score (NPS) responses into Promoters (9–10), Passives (7–8), and Detractors (0–6).
+- Calculated the overall NPS Index to evaluate customer loyalty and willingness to recommend the bank.
+- Compared the distribution of CSAT and NPS responses to identify potential differences between customer satisfaction and customer advocacy.
+
+**2. Response Time Distribution and Potential Outlier Analysis**
+- Analyzed the distribution of first response times to understand how quickly customers received an initial response across service interactions.
+- Examined descriptive statistics, including mean, median, minimum, maximum, and quartiles, to understand response time patterns.
+- Used the Interquartile Range (IQR) method to identify potential outliers in response time data.
+- Investigated unusually high response time values and considered how extreme observations could affect the average.
+- Compared mean and median response times to assess the impact of skewed distributions.
+
+*Note: Response time represents the time to first response, not the total time required to resolve a customer issue.*
+
+**3. Customer Service Channel Performance Analysis**
+- Compared customer experience performance across Mobile App, Chatbot, Call Center, and Email channels.
+- Evaluated the number of survey responses to understand the distribution of customer interactions across channels.
+- Compared average CSAT scores and CSAT satisfaction rates to identify channels with relatively stronger or weaker satisfaction performance.
+- Examined average first response times to understand differences in response speed across channels.
+- Reviewed resolution status and First Contact Resolution (FCR) rates to assess service resolution performance.
+- Identified channels that may require further investigation based on their satisfaction, response time, and resolution indicators.
+
+**4. Banking Service Performance Analysis**
+- Compared customer experience across six banking services: Account Access, Card Services, Fund Transfer, Account Opening, QRIS Payment, and Bill Payment.
+- Evaluated response volume, average CSAT scores, and unresolved rates for each service category.
+- Identified services with relatively higher satisfaction levels and lower unresolved rates.
+- Highlighted services with comparatively lower satisfaction and higher unresolved rates as potential areas for service improvement.
+- Used the findings to identify which banking services may benefit from further operational investigation.
+
+**5. Monthly CSAT and NPS Trend Analysis**
+- Analyzed monthly CSAT satisfaction rates and NPS Index values from November 2025 to October 2026.
+- Tracked monthly changes to understand how customer satisfaction and customer advocacy evolved over the observation period.
+- Identified months with the highest and lowest CSAT and NPS performance.
+- Compared CSAT and NPS trends to identify periods where customer satisfaction and willingness to recommend the bank moved differently.
+- Highlighted notable monthly fluctuations that could be investigated further using additional operational or customer feedback data.
+
+**6. Correlation Analysis Between Customer Experience Metrics**
+- Examined the relationships between CSAT scores, NPS scores, First Contact Resolution (FCR), and first response time.
+- Used correlation analysis to understand the direction and strength of relationships between selected variables.
+- Identified a positive correlation between CSAT and NPS (r = 0.753), indicating that higher satisfaction scores tended to be associated with higher NPS scores.
+- Observed positive correlations between FCR and NPS (r = 0.382), as well as FCR and CSAT (r = 0.365).
+- Found weak negative correlations between first response time and CSAT (r = -0.090), and between first response time and NPS (r = -0.039).
+- Interpreted the results as descriptive relationships rather than evidence of causation.
+
+*Note: Correlation does not imply causation. The analysis identifies patterns in the synthetic dataset and does not establish that one metric directly causes changes in another.*
 
 ### Step 4 — Power BI Dashboard
 
