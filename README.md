@@ -207,6 +207,8 @@ These fluctuations indicate that customer experience metrics should be monitored
 
 ### Correlation Analysis
 
+![NexaBank CX Analytics](screenshots/NexaBankKolerasi.png)
+
 | Relationship | Pearson Correlation |
 |---|---:|
 | CSAT – NPS | +0.753 |
