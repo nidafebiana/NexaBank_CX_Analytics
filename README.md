@@ -100,19 +100,12 @@ Used Google BigQuery to validate data integrity and check:
 - Invalid FCR records.
 - Negative response times.
 
+![NexaBank CX Analytics](screenshots/SQL1.png)
+![NexaBank CX Analytics](screenshots/SQL2.png)
+
 **Validation results: 7 out of 7 checks passed.**
 
-| Validation | Expected Result | Actual Result |
-|---|---:|---:|
-| Total Records | 5,000 | 5,000 |
-| Duplicate Response ID | 0 | 0 |
-| Missing CSAT | 0 | 0 |
-| Invalid CSAT | 0 | 0 |
-| Invalid NPS | 0 | 0 |
-| Invalid FCR | 0 | 0 |
-| Negative Response Time | 0 | 0 |
-
-Python was also used for basic data inspection, data type conversion, and outlier investigation.
+![NexaBank CX Analytics](screenshots/Result_SQL.png)
 
 ### Step 3 — Exploratory Data Analysis (EDA)
 
