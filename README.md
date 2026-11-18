@@ -135,7 +135,7 @@ Developed a one-page Executive Overview dashboard with:
 - Survey Responses by Channel
 - Service Performance Summary
 
-Interactive filters include Date Range, Channel, and Customer Segment.
+![NexaBank CX Analytics](screenshots/NexaBank_Dashboard.png)
 
 ## 6. Key Performance Indicators
 
