@@ -268,21 +268,169 @@ These fluctuations indicate that customer experience metrics should be monitored
 - FCR has a positive correlation with both CSAT and NPS.
 - First response time has very weak linear correlations with CSAT, NPS, and FCR.
 
-Correlation does not establish causation.
-
 ## 8. Business Insights & Recommendations
 
-Based on the observed patterns, the following areas are recommended for further investigation.
+## Business Insights & Recommendations
 
-| Area | Recommendation |
+Based on the exploratory data analysis, four key areas were identified as potential opportunities for improving customer experience and service performance.
+
+The recommendations focus on further investigating operational patterns, identifying potential contributing factors, and defining measurable improvement indicators.
+
+### 1. Chatbot: Improve Issue Handling and Conversation Flow
+
+**Key Finding**
+
+The Chatbot recorded the highest unresolved rate among the service channels, at 35.96%.
+
+**Business Insight**
+
+A high unresolved rate does not necessarily indicate that the chatbot is failing. Certain issues involving sensitive personal or account information may legitimately require human agent assistance due to privacy and security considerations.
+
+However, issues that can be handled through automation may indicate opportunities to improve intent recognition, conversation accuracy, and escalation logic.
+
+**Recommendations**
+- Analyze unresolved chatbot interactions by issue category and identify categories or combinations of issues contributing the highest unresolved volume and rate.
+- Distinguish between cases that legitimately require human agent intervention and those that could potentially be resolved through self-service.
+- For issues suitable for automation, review conversation flows to assess whether the chatbot accurately identifies customer intent and provides relevant responses.
+- Investigate potential gaps in intent recognition, response accuracy, conversation routing, and escalation logic.
+- Review whether escalation to human agents occurs at the appropriate stage of the conversation.
+
+**Success Metrics**
+- Chatbot resolution rate.
+- Unresolved rate.
+- Human-agent escalation rate, segmented by escalation reason.
+- Intent recognition accuracy.
+
+**Expected Outcome**
+
+Improve chatbot resolution effectiveness while ensuring that sensitive customer issues are appropriately escalated to human agents.
+
+### 2. Email: Investigate First Response Time and Workload Distribution
+
+**Key Finding**
+
+Email recorded the longest average first response time among the service channels, at 212.70 minutes.
+
+**Business Insight**
+
+The long average first response time indicates a potential service efficiency issue. However, the average alone does not explain when delays occur, which issue categories are affected, or whether workload distribution contributes to the problem.
+
+**Recommendations**
+- Examine the distribution of email first response times, including the median, upper percentiles, and potential extreme values.
+- Analyze response time patterns by day, hour, and issue category to identify periods and types of issues associated with longer delays.
+- If agent-level data is available, evaluate response time and workload distribution across agents to identify potential workload imbalances or operational bottlenecks.
+- Review whether certain issue categories require specialized handling or additional processing time.
+- Evaluate email handling procedures and identify opportunities to improve workload allocation and response efficiency.
+
+**Success Metrics**
+- Median first response time.
+- 90th percentile (P90) first response time.
+- Percentage of responses meeting the service-level agreement (SLA).
+- Average workload and response time per agent, if available.
+
+**Expected Outcome**
+
+Identify the operational patterns associated with delayed email responses and support improvements in workload management and service efficiency.
+
+### 3. Bill Payment: Investigate Recurring Payment Issues
+
+**Key Finding**
+
+Bill Payment recorded the highest unresolved rate among the banking service categories, at 30.97%.
+
+**Business Insight**
+
+The high unresolved rate suggests that Bill Payment requires further investigation, particularly regarding transaction-related problems such as payment failures and payments that have not been reflected in customer accounts.
+
+These issues may involve service processes or underlying technical problems that cannot be fully identified using the current dataset.
+
+**Recommendations**
+- Conduct a more detailed analysis of Bill Payment complaints, focusing on Payment Failed and Payment Not Reflected issues.
+- Identify the most frequent problem categories and examine their contribution to unresolved cases.
+- Collaborate with the IT and technical teams to investigate potential transaction processing errors, payment gateway issues, system integration problems, and transaction status synchronization.
+- Ensure that identified technical problems are investigated and addressed by the responsible teams.
+- Monitor recurring payment issues and customer feedback after corrective actions have been implemented.
+
+**Success Metrics**
+- Bill Payment unresolved rate.
+- Payment failure rate.
+- Payment not reflected incident rate.
+- Number of recurring payment-related complaints.
+- Resolution rate for payment-related issues.
+
+**Expected Outcome**
+
+Identify recurring payment-related problems and support technical improvements that reduce unresolved cases and improve the reliability of the customer payment experience.
+
+### 4. Call Center: Identify Effective First Contact Resolution Practices
+
+**Key Finding**
+
+The Call Center recorded a First Contact Resolution (FCR) rate of 63%, making it a useful channel for further investigation into effective issue-handling practices.
+
+**Business Insight**
+
+The FCR result provides an opportunity to understand which issue categories are more likely to be resolved during the first interaction and what handling practices may contribute to successful resolution.
+
+Rather than assuming that all Call Center practices are effective, further analysis is needed to identify patterns associated with higher FCR performance.
+
+**Recommendations**
+- Analyze FCR rates by issue category to identify which types of customer problems are more frequently resolved during the first interaction.
+- Review agent handling procedures, troubleshooting steps, knowledge resources, and resolution workflows for categories with relatively high FCR rates.
+- Compare handling patterns between issue categories with high and low FCR rates.
+- Identify effective practices that could potentially be adapted to other service channels where appropriate.
+- Investigate categories with lower FCR rates to identify opportunities for better agent support, process improvements, or escalation procedures.
+
+**Success Metrics**
+- Overall FCR rate.
+- FCR rate by issue category.
+- Repeat contact rate.
+- Resolution rate.
+- Customer satisfaction by FCR status.
+
+**Expected Outcome**
+
+Identify effective issue-handling practices that may help improve first-contact resolution, reduce repeated customer interactions, and support a more consistent service experience.
+
+### Improvement Prioritization
+
+Based on the observed performance indicators, the following preliminary priorities are proposed:
+
+| Priority | Area | Main Reason |
+|---|---|---|
+| High | Bill Payment | Highest unresolved rate among banking services (30.97%) |
+| High | Chatbot | Highest unresolved rate among service channels (35.96%) |
+| Medium | Email | Longest average first response time (212.70 minutes) |
+| Medium | Call Center | Opportunity to identify and learn from practices associated with a 63% FCR rate |
+
+These priorities are preliminary and should be reassessed using case volume, business impact, operational costs, and service-level requirements. The unresolved rates across channels and banking services represent different levels of analysis and should not be directly compared as if they were the same category.
+
+### Further Data Requirements
+
+Additional operational data would help validate the findings and support deeper investigation:
+
+| Area | Additional Data Required |
 |---|---|
-| Chatbot | Review chatbot conversation flows, issue coverage, and escalation mechanisms to human agents. |
-| Email | Investigate long first response times and review response handling processes. |
-| Bill Payment | Examine recurring payment issues, particularly Payment Failed and Payment Not Reflected categories. |
-| First Contact Resolution | Investigate practices associated with the higher Call Center FCR rate and assess whether they can be adapted to other channels. |
-| Monthly CX Monitoring | Monitor changes in CSAT, NPS, and unresolved rates to identify periods requiring further investigation. |
+| Chatbot | Conversation logs, detected customer intent, escalation reasons, and conversation outcomes |
+| Email | Agent ID, ticket timestamps, working hours, and issue categories |
+| Bill Payment | Transaction status, failure reasons, payment gateway responses, and reconciliation records |
+| Call Center | Agent handling records, issue categories, repeat contact indicators, and resolution outcomes |
 
-These recommendations are hypotheses for operational investigation, not confirmed root causes.
+### Continuous Monitoring and Evaluation
+
+Customer experience improvement should be treated as an ongoing process rather than a one-time initiative.
+
+Recommended monitoring activities include:
+- Track relevant customer experience and operational KPIs regularly.
+- Establish baseline performance before implementing improvement initiatives.
+- Compare KPI performance before and after corrective actions.
+- Evaluate whether improvements in one service channel affect other channels.
+- Investigate recurring issues and unexpected KPI deterioration.
+- Validate improvement outcomes using actual operational data.
+
+**Overall Recommendation**
+
+The analysis suggests that improving customer experience requires more than reducing response time. Effective issue resolution, accurate customer intent recognition, technical reliability, appropriate human-agent escalation, and consistent service handling should
 
 ## 9. Limitations
 
@@ -291,7 +439,6 @@ These recommendations are hypotheses for operational investigation, not confirme
 - CSAT and NPS are included in the same dataset for analytical simplicity; actual survey programs may collect them separately.
 - Response time represents time to first response, not total resolution time.
 - The dataset does not include queue waiting time, staffing levels, issue complexity, resolution duration, or repeat-contact records.
-- Correlation analysis identifies statistical relationships but cannot establish causality.
 - Outliers in response time were investigated but not automatically removed, since extreme values may represent meaningful observations.
 
 ## 10. Project Outcome
