@@ -10,8 +10,6 @@ The analysis uses Customer Satisfaction Score (CSAT), Net Promoter Score (NPS), 
 
 The project demonstrates an end-to-end analytics workflow, from data validation and cleaning to exploratory data analysis, SQL analysis, and interactive dashboard development.
 
-> **Disclaimer:** NexaBank and all customer records in this project are fictional. The dataset is synthetically generated for educational and portfolio purposes. Findings should not be interpreted as actual customer feedback or real banking performance.
-
 ## 2. Business Objectives
 
 The project aims to answer the following business questions:
@@ -129,8 +127,6 @@ The analysis covered the following areas:
 - Investigated unusually high response time values and considered how extreme observations could affect the average.
 - Compared mean and median response times to assess the impact of skewed distributions.
 
-*Note: Response time represents the time to first response, not the total time required to resolve a customer issue.*
-
 **3. Customer Service Channel Performance Analysis**
 - Compared customer experience performance across Mobile App, Chatbot, Call Center, and Email channels.
 - Evaluated the number of survey responses to understand the distribution of customer interactions across channels.
@@ -160,8 +156,6 @@ The analysis covered the following areas:
 - Observed positive correlations between FCR and NPS (r = 0.382), as well as FCR and CSAT (r = 0.365).
 - Found weak negative correlations between first response time and CSAT (r = -0.090), and between first response time and NPS (r = -0.039).
 - Interpreted the results as descriptive relationships rather than evidence of causation.
-
-*Note: Correlation does not imply causation. The analysis identifies patterns in the synthetic dataset and does not establish that one metric directly causes changes in another.*
 
 ### Step 4 — Power BI Dashboard
 
